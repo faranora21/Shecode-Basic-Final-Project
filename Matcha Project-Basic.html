@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matcha Latte</title>
+  </head>
+  <style>
+    body {
+      background-image: linear-gradient(109.6deg, #aed09e 11.2%, #e2d1c3 91.1%);
+    }
+    .container {
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.8);
+      background: white;
+      border-radius: 8px;
+      width: 45%;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    li {
+      display: inline;
+      font-family: "Times New Roman", Times, serif;
+      margin: 0 15px;
+      padding: 0;
+      color: #44886a;
+    }
+
+    li:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    h1 {
+      text-align: center;
+      color: #44886a;
+      font-family: Georgia, serif;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: #83580b;
+      font-size: 20px;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .matcha {
+      text-align: center;
+      line-height: 1.5;
+      font-size: 17px;
+      color: #4a2b13;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    a {
+      font-size: 12px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      color: #4a2b13;
+      text-decoration: none;
+    }
+
+    .buy {
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+      color: #44886a;
+    }
+
+    button {
+      display: block;
+      background: #94aa2a;
+      color: white;
+      font-size: 15px;
+      font-family: monospace;
+      margin: 15px auto;
+      padding: 15px 20px;
+      border: 1px solid #94aa2a;
+      border-radius: 30px;
+      box-shadow: 0px 8px 8px 0 rgba(37, 39, 89, 0.08);
+      transition: all 200ms ease-in-out;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a8896c;
+      border: 1px solid #a8896c;
+      color: white;
+    }
+
+    .information {
+      text-align: center;
+    }
+
+    .email {
+      color: #83580b;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .latte {
+      color: black;
+      font-size: 12px;
+      font-weight: lighter;
+    }
+    .instagram {
+      color: #83580b;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .account {
+      color: black;
+      font-size: 12px;
+      font-weight: lighter;
+    }
+
+    .footer {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 12px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <ul style="list-style: none">
+        <li>Main</li>
+        <li>About Us</li>
+      </ul>
+      <hr />
+      <h1>Matcha Latte</h1>
+      <p class="matcha">
+        Our creamy smooth matcha latte is perfect for summer.
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/900/original/Iced-Matcha-Latte-FT-RECIPE0622-2000-9c2e116d3bc54bdaacda10e62e8e0205.jpg?1677870949"
+        alt="Matcha Latte"
+        width="250"
+      />
+
+      <h2>What is Matcha?🍵</h2>
+      <p>
+        Matcha powder is ground green tea leaves that are specially grown and
+        processed, which is traditionally consumed in
+        <strong> East Asia </strong>. Its slightly
+        <em>bitter, earthy taste </em> makes matcha powder a great alternative
+        to coffee.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Matcha"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <p class="buy">Get Your Matcha Latte Here 👇🏻</p>
+      <button class="buy-button">Matcha Latte ❤️</button>
+
+      <div class="information">
+        <span class="email"
+          >Email:
+          <span class="latte">hello@matchalatte.com</span>
+        </span>
+        <span class="instagram"
+          >Instagram:
+          <span class="account">@matchalatte.co</span>
+        </span>
+      </div>
+
+      <p class="footer">This page is built by Farah</p>
+    </div>
+    <script>
+      function buyMatcha() {
+        let name = prompt("What is your first name?");
+        let email = prompt("What is your email?");
+
+        if (name.length && email.length) {
+          alert(
+            "Thank you for supporting us " +
+              name +
+              "! ❤️ We will be in touch with you soon."
+          );
+        } else {
+          alert(
+            "Sorry, we can't give you Matcha Latte if you don't give us your contact 🙁"
+          );
+        }
+      }
+
+      let buyButton = document.querySelector("button");
+      buyButton.addEventListener("click", buyMatcha);
+    </script>
+  </body>
+</html>
